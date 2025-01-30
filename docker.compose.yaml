@@ -2,12 +2,12 @@ services:
   postgres:
     image: postgres:16
     ports:
-      - "5431:5432" # Correct format for port mapping
+      - "5431:5432"
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
     volumes:
-      - postgres_data:/var/lib/postgresql/data 
+      - postgres_data:/var/lib/postgresql/data
 volumes:
   postgres_data:
